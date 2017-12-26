@@ -1,5 +1,4 @@
-# Abhigyan
-
+# Abhigyan[align=center]
 ![Abhigyan](ab1.png)
 
 
