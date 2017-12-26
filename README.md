@@ -3,5 +3,5 @@
 
 
 ## About
-#### Sophmore At Indian Institute of Technology(BHU),Varanasi
+#### Sophomore At Indian Institute of Technology(BHU),Varanasi
 
