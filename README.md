@@ -3,9 +3,9 @@
 ![Abhigyan](ab1.png)
 
 
-## Usage
+## About
 
-To use the Hacker theme:
+
 
 1. Add the following to your site's `_config.yml`:
 
