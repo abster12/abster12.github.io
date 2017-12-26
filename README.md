@@ -1,6 +1,6 @@
 # Abhigyan
 
-![Abhigyan](pp.jpeg)
+![Abhigyan](ab1.png)
 
 
 ## Usage
