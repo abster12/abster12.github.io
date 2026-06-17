@@ -34,7 +34,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.skill-card, .timeline-item, .project-card, .info-card, .section-title').forEach(el => {
+document.querySelectorAll('.skill-card, .timeline-item, .project-card, .info-card, .section-title, .explore-tag').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

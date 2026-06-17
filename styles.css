@@ -27,8 +27,11 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .hero-links{display:flex;gap:1rem;justify-content:center;margin-bottom:1.75rem;opacity:0;animation:fadeInUp .6s ease .8s forwards}
 .hero-link{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:all .3s;font-size:.9rem}
 .hero-link:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-3px)}
-.hero-cta{display:inline-block;padding:.875rem 2rem;background:var(--gradient-1);color:#fff;font-weight:600;border-radius:50px;text-decoration:none;transition:all .3s;opacity:0;animation:fadeInUp .6s ease 1s forwards;font-size:.9rem}
+.hero-cta-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeInUp .6s ease 1s forwards}
+.hero-cta{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:var(--gradient-1);color:#fff;font-weight:600;border-radius:50px;text-decoration:none;transition:all .3s;font-size:.9rem}
 .hero-cta:hover{transform:translateY(-3px);box-shadow:0 10px 40px var(--accent-glow)}
+.resume-cta{background:transparent !important;border:1px solid var(--border);color:var(--text-secondary) !important}
+.resume-cta:hover{border-color:var(--accent) !important;color:var(--accent) !important;box-shadow:0 0 20px var(--accent-glow) !important}
 .scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);opacity:0;animation:fadeInUp .6s ease 1.2s forwards}
 .scroll-arrow{width:20px;height:20px;border-right:2px solid var(--text-muted);border-bottom:2px solid var(--text-muted);transform:rotate(45deg);animation:scrollBounce 2s infinite}
 @keyframes scrollBounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(8px)}}
@@ -51,6 +54,16 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .info-card h3{font-size:.875rem;font-weight:600;margin-bottom:.25rem}
 .info-card p{color:var(--text-primary);font-weight:600;font-size:.95rem}
 .info-card span{font-size:.8rem;color:var(--text-muted)}
+
+/* Currently Exploring */
+.exploring{background:var(--bg-primary);padding:3rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.exploring-content{text-align:center}
+.exploring-label{font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.15em;margin-bottom:1.5rem;font-weight:600}
+.exploring-tags{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;max-width:800px;margin:0 auto}
+.explore-tag{display:inline-flex;align-items:center;gap:.5rem;background:var(--bg-secondary);border:1px solid var(--border);padding:.5rem 1.1rem;border-radius:100px;font-size:.85rem;color:var(--text-secondary);transition:all .3s;cursor:default}
+.explore-tag::before{content:'';width:7px;height:7px;border-radius:50%;background:#3fb950;box-shadow:0 0 8px rgba(63,185,80,.5);animation:pulse 2s infinite;flex-shrink:0}
+.explore-tag:hover{border-color:var(--accent);color:var(--text-primary);transform:translateY(-2px);box-shadow:0 5px 20px rgba(0,0,0,.3)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
 /* Skills */
 .skills{background:var(--bg-primary)}
@@ -162,6 +175,10 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 
     .about,.skills,.experience,.projects,.contact{padding:3.5rem 0}
     .section-title{font-size:1.75rem;margin-bottom:2.5rem}
+
+    .exploring{padding:2rem 0}
+    .explore-tag{font-size:.8rem;padding:.4rem .875rem}
+    .exploring-label{font-size:.7rem;margin-bottom:1.25rem}
 
     .about-content{grid-template-columns:1fr;gap:2rem}
     .about-info{flex-direction:row;flex-wrap:wrap;gap:.75rem}
