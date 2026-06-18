@@ -22,8 +22,22 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .hero-content{position:relative;z-index:1;text-align:center;padding:6rem 1rem 2rem}
 .hero-greeting{font-size:1rem;color:var(--accent);font-weight:500;margin-bottom:.5rem;opacity:0;animation:fadeInUp .6s ease forwards}
 .hero-name{font-size:clamp(2.5rem,10vw,5.5rem);font-weight:800;background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;margin-bottom:.5rem;opacity:0;animation:fadeInUp .6s ease .2s forwards}
-.hero-title{font-size:clamp(1.1rem,3vw,1.5rem);color:var(--text-secondary);font-weight:600;margin-bottom:.75rem;opacity:0;animation:fadeInUp .6s ease .4s forwards}
-.hero-subtitle{font-size:1rem;color:var(--text-muted);max-width:480px;margin:0 auto 1.75rem;opacity:0;animation:fadeInUp .6s ease .6s forwards}
+.hero-title{font-size:clamp(1.1rem,3vw,1.5rem);color:var(--text-secondary);font-weight:600;margin-bottom:1.5rem;opacity:0;animation:fadeInUp .6s ease .4s forwards}
+
+/* Hero Terminal */
+.hero-terminal{width:100%;max-width:520px;margin:0 auto 1.75rem;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#0d0d14;box-shadow:0 20px 60px rgba(0,0,0,.4);opacity:0;animation:fadeInUp .6s ease .6s forwards;text-align:left}
+.terminal-header{display:flex;align-items:center;gap:8px;padding:10px 16px;background:#12121a;border-bottom:1px solid var(--border)}
+.terminal-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.terminal-dot-red{background:#ff5f57}
+.terminal-dot-yellow{background:#febc2e}
+.terminal-dot-green{background:#28c840}
+.terminal-body{padding:16px 20px;font-family:'JetBrains Mono',monospace;font-size:.85rem;line-height:1.8;min-height:120px;color:var(--text-secondary)}
+.terminal-line{white-space:pre-wrap;word-break:break-word}
+.terminal-prompt{color:var(--accent-light)}
+.terminal-output{color:var(--text-muted)}
+.terminal-accent{color:#3fb950}
+.terminal-cursor{display:inline-block;width:8px;height:1.1em;background:var(--accent);animation:blink 1s steps(1) infinite;vertical-align:text-bottom;margin-left:2px}
+@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
 .hero-links{display:flex;gap:1rem;justify-content:center;margin-bottom:1.75rem;opacity:0;animation:fadeInUp .6s ease .8s forwards}
 .hero-link{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:all .3s;font-size:.9rem}
 .hero-link:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-3px)}
@@ -98,7 +112,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .timeline-details li::before{content:'▹';position:absolute;left:0;color:var(--accent)}
 
 /* Side Projects */
-.side-projects{background:var(--bg-secondary);padding:5rem 0}
+.side-projects{background:var(--bg-secondary);padding:6rem 0;margin-top:2rem}
 .side-projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
 .side-project-card{background:var(--bg-tertiary);padding:1.75rem;border-radius:18px;border:1px solid var(--border);transition:all .4s;text-decoration:none;display:block;color:inherit;position:relative;overflow:hidden}
 .side-project-card:hover{border-color:rgba(99,102,241,0.4);transform:translateY(-6px);box-shadow:0 25px 50px rgba(0,0,0,0.4)}
@@ -124,6 +138,8 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .project-card p{color:var(--text-secondary);font-size:.875rem;line-height:1.7;margin-bottom:1.25rem;position:relative;z-index:1}
 .project-tags{display:flex;flex-wrap:wrap;gap:.4rem;position:relative;z-index:1}
 .project-tags span{background:var(--bg-tertiary);padding:.3rem .75rem;border-radius:20px;font-size:.7rem;color:var(--accent);border:1px solid rgba(99,102,241,0.2)}
+.project-arrow{position:absolute;bottom:1.25rem;right:1.25rem;opacity:0;transform:translateX(-8px);transition:all .4s;z-index:2;color:var(--accent);font-size:.8rem}
+.project-card:hover .project-arrow{opacity:1;transform:translateX(0)}
 
 /* Contact */
 .contact{background:var(--bg-secondary);text-align:center}
@@ -172,6 +188,9 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
     .hero-greeting{font-size:.9rem}
     .hero-links{gap:.875rem}
     .hero-link{width:40px;height:40px;font-size:.85rem}
+
+    .terminal-body{font-size:.78rem;padding:12px 14px;min-height:100px}
+    .hero-terminal{max-width:100%}
 
     .about,.skills,.experience,.projects,.contact{padding:3.5rem 0}
     .section-title{font-size:1.75rem;margin-bottom:2.5rem}
