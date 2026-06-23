@@ -1,6 +1,6 @@
 # Abhigyan
 
-**Email:** abhi.gyan.met16@itbhu.ac.in  
+**Email:** abhigyan0987@gmail.com  
 **GitHub:** github.com/abster12
 
 ## Education
