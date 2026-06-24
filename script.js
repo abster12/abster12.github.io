@@ -30,7 +30,7 @@ const terminalLines = [
   { type: 'prompt', text: '$ cat focus.txt' },
   { type: 'output', text: '> distributed systems · AI platforms · multi-agent orchestration' },
   { type: 'prompt', text: '$ ls experiments/' },
-  { type: 'output', text: '> stepwise/  tripvault/  hermes-agent/  advisor-executor/' },
+  { type: 'output', text: '> stepwise/  traippy/  hermes-agent/  advisor-executor/' },
   { type: 'prompt', text: '$ _' }
 ];
 
